@@ -3,6 +3,8 @@ Usefull function for base64 decode/encode.
 
 # How to
 
+You can easily compile the project using the `Makefile` provided in the repo. Make sure you have gcc installed.
+
 You can use the two following functions:
 - `base64_encode`: encode the string used as the first parameter and return it as a pointer  
 -  `base64_decode`: decode the string used as the second parameter and return it as a pointer  
