@@ -15,7 +15,7 @@ int to_int(char c) {
     return 0;
 }
 
-char *base64_encode(const char *data, int l, int *result_length) {
+char *base64_encode(const char *data, const int l, int *result_length) {
     int i, j;
     *result_length = 4 * ((l + 2)/3);
     char *result = malloc(*result_length);
@@ -37,7 +37,7 @@ char *base64_encode(const char *data, int l, int *result_length) {
     return result;
 }
 
-char *base64_decode(const char *data, int l, int *result_length) {
+char *base64_decode(const char *data, const int l, int *result_length) {
     int i, j;
     *result_length = l/4*3;
     if(data[l-1]=='=') (*result_length)--;
